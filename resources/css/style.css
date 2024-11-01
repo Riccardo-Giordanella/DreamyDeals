@@ -1,5 +1,79 @@
+:root{
+    --lavender: rgb(246, 232, 234);
+    --brightpink: rgb(239, 98, 108);
+    --licorice: rgb(34, 24, 28);
+}
+
+.backgrounddark{
+    background-color: var(--licorice);
+}
+
+.backgroundgeneral{
+    background-color: var(--lavender);
+}
+
+.textred{
+    color: var(--brightpink);
+}
+
+.textwhite{
+    color: var(--lavender);
+}
+
+body{
+    background-color: var(--lavender);
+}
+
+a{
+    text-decoration: none;
+    color: var(--brightpink);
+    transition: 0.4s;
+}
+
+a:hover{
+    transform: scale(1.02);
+    color: var(--lavender);
+    text-shadow: 1px 1px 1px var(--lavender), -1px -1px 1px var(--lavender);
+}
+
+.nav-link{
+    color: var(--brightpink);
+}
+
+h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: var(--lavender);
+    background-color: rgba(0, 0, 0, 0.5); /* Nero semi-trasparente */
+    padding: 5px;
+    display: inline-block;
+    font-size: 3em;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+i{
+    transition: 0.4s;
+}
+
+i:hover{
+    color: var(--lavender);
+    transform: scale(1.2);
+}
+
 .height-custom{
     min-height: 60vh;
+}
+
+.height-custom-full{
+    height: 100vh;
+}
+
+.bg-img{
+    background-image: url(/public/herohead.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .card-w{

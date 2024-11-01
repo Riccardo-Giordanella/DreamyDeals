@@ -1,9 +1,9 @@
 <!-- Footer -->
-<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+<footer class="text-center text-lg-start text-muted backgrounddark textred">
     <!-- Section: Social media -->
-    <section class="social-section">
+    <section class="social-section backgrounddark textred">
         <!-- Left -->
-        <div class="me-5 d-none d-lg-block">
+        <div class="me-5 d-none d-lg-block ">
             <span>{{__("ui.social")}}</span>
         </div>
         <!-- Left -->
@@ -34,15 +34,15 @@
     <!-- Section: Social media -->
 
     <!-- Section: Links -->
-    <section>
+    <section class="backgrounddark textred">
         <div class="container-fluid text-center text-md-start mt-5">
             <!-- Grid row -->
-            <div class="row mt-3">
+            <div class="row mt-3 justify-content-center">
                 <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 text-center">
                     <!-- Content -->
                     <h6 class="text-uppercase fw-bold mb-4">
-                        <i class="fas fa-gem me-3"></i>Presto.it
+                        <i class="fas fa-gem me-3"></i>DreamyDeals
                     </h6>
                     <p>
                         {{__("ui.siteDesc")}}
@@ -51,14 +51,16 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
+                <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4 d-flex flex-column align-items-center">
                     <!-- Links -->
                     <h6 class="text-uppercase fw-bold mb-4">
                         {{__("ui.link")}}
                     </h6>
-                    <p class="fw-bold">{{__("ui.rev")}}</p>
                     <p>
-                        <a href="{{route('become.revisor')}}" class="text-reset btn btn-outline-primary">{{__("ui.become")}}</a>
+                        <a href="{{route('become.revisor')}}" class="text-reset btn bg-dark">{{__("ui.become")}}</a>
+                    </p>
+                    <p>
+                        <a href="{{route('faq')}}" class="text-reset btn bg-dark">FAQ</a>
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -70,7 +72,7 @@
                     <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
                     <p>
                         <i class="fas fa-envelope me-3"></i>
-                        info@example.com
+                        info@dreamydeals.com
                     </p>
                     <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
                     <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>

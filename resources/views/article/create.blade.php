@@ -2,7 +2,7 @@
     <div class="container pt-5">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <h1 class="display-4 pt-5">
+                <h1 class="display-4">
                     {{__("ui.publish")}}
                 </h1>
             </div>

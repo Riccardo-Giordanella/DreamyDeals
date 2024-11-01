@@ -24,4 +24,8 @@ class PublicController extends Controller
         session()->put('locale', $lang);
         return redirect()->back();
     }
+
+    public function faq(){
+        return view('faq');
+    }
 }

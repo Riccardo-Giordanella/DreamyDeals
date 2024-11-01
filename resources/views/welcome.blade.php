@@ -15,18 +15,13 @@
             </div>
         </div>
     </div>
-    <main class="container-fluid text-center bg-body-tertiary">
+    <main class="container-fluid text-center m-0">
         <section class="row justify-content-center align-items-center">
-            <div class="col-12 d-flex justify-content-center flex-column height-custom">
-                <h1 class="display-4">Presto.it</h1>
-                <div class="my-3">
-                    @auth
-                    <a href="{{route('create.article')}}" class="btn btn-dark">{{__("ui.publish")}}</a>
-                    @endauth
-                </div>
+            <div class="col-12 d-flex justify-content-center flex-column height-custom-full bg-img">
+                <h1>DreamyDeals</h1>
             </div>
         </section>
-        <section class="row height-custom justify-content-center align-items-center py-5">
+        <section class="row height-custom justify-content-center align-items-center py-5 backgroundgeneral">
             @forelse($articles as $article)
             <div class="col-12 col-md-3">
                 <x-card :article="$article" />

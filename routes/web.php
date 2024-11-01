@@ -40,3 +40,6 @@ Route::get('/search/article', [PublicController::class, 'searchArticles'])->name
 
 // Rotta cambio lingua
 Route::post('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('setLocale');
+
+// Rotta delle FAQ
+Route::get('/faq', [PublicController::class, 'faq'])->name('faq');
