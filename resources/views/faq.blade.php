@@ -2,8 +2,8 @@
     <header class="text-center">
         <h1 class="display-4 my-5">FAQ</h1>
     </header>
-    <main>
-        <div class="accordion" id="accordionExample">
+    <main class="container">
+        <div class="accordion mb-5" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed backgrounddark textred" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">

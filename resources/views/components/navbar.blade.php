@@ -61,6 +61,12 @@
                         <li><a href="{{route('login')}}" class="dropdown-item textred">{{__("ui.login")}}</a></li>
                         <hr class="dropdown-divider">
                         <li><a href="{{route('register')}}" class="dropdown-item textred">{{__("ui.register")}}</a></li>
+                        <hr class="dropdown-divider">
+                        <li class="d-flex justify-content-center">
+                            <a href="">
+                                <i class="fa-brands fa-facebook fa-2x" style="color: #0008ff;"></i>
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 @endauth

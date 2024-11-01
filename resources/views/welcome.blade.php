@@ -1,6 +1,6 @@
 <x-layout>
     <div class="container-fluid">
-        <div class="row mt-3">
+        <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 @if (session()->has('errorMessage'))
                 <div class="alert alert-danger text-center shadow rounded w-50">

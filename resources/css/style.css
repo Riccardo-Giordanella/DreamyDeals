@@ -36,6 +36,10 @@ a:hover{
     text-shadow: 1px 1px 1px var(--lavender), -1px -1px 1px var(--lavender);
 }
 
+a:focus{
+    color: var(--brightpink) !important;
+}
+
 .nav-link{
     color: var(--brightpink);
 }
@@ -70,7 +74,7 @@ i:hover{
 }
 
 .bg-img{
-    background-image: url(/public/herohead.png);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.60), transparent), url(/public/herohead.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
