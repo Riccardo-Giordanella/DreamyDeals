@@ -10,11 +10,6 @@
     </div>
     <div class="row justify-content-center align-items-center height-custom">
         <div class="col-12 col-md-6">
-            @if (session('error'))
-            <div class="alert alert-danger">
-                {{ session('error') }}
-            </div>
-            @endif
             <form method="POST" action="{{route('login')}}" class="backgrounddark textred shadow rounded p-5">
                 @csrf
                 <div class="mb-3">

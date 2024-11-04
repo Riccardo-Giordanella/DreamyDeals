@@ -71,5 +71,16 @@ return [
     'discount' => '6. ¿Cómo puedo aplicar un código de descuento?',
     'discountDesc' => "Puede aplicar un código de descuento en la página de pago. Ingrese el código en el campo correspondiente y haga clic en 'Aplicar'. El descuento se deducirá automáticamente del total de su pedido.",
     'edit' => "7. ¿Se puede cambiar o cancelar mi pedido después de la compra?",
-    'editDesc' => "Si desea cambiar o cancelar su pedido, comuníquese con nuestro equipo de atención al cliente lo antes posible. Haremos todo lo posible para ayudarle, pero tenga en cuenta que no podemos garantizar cambios o cancelaciones si su pedido ya ha sido procesado o enviado."
+    'editDesc' => "Si desea cambiar o cancelar su pedido, comuníquese con nuestro equipo de atención al cliente lo antes posible. Haremos todo lo posible para ayudarle, pero tenga en cuenta que no podemos garantizar cambios o cancelaciones si su pedido ya ha sido procesado o enviado.",
+    'requiredName' => 'El campo Nombre no puede estar vacío',
+    'stringName' => 'El campo Nombre no puede ser numérico',
+    'stringMax' => 'El campo Nombre no puede exceder los 255 caracteres.',
+    'nameRegex' => 'El campo Nombre debe contener al menos una letra',
+    'nameMin' => 'El campo Nombre debe contener al menos dos caracteres.',
+    'requiredEmail' => 'El campo Email no puede estar vacío',
+    'stringEmail' => 'El campo Email no puede ser numérico',
+    'emailEmail' => 'El campo Email debe ser una dirección de e-mail válida.',
+    'emailMax' => 'El campo Email no puede exceder los 255 caracteres.',
+    'requiredPassword' => 'El campo Password no puede estar vacío',
+    'stringPassword' => 'El campo Password no puede ser solo numérico'
 ];

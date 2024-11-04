@@ -71,5 +71,16 @@ return [
     'discount' => '6. How can I apply a discount code?',
     'discountDesc' => "You can apply a discount code on the checkout page. Enter the code in the appropriate field and click 'Apply'. The discount will be automatically deducted from your order total.",
     'edit' => "7. Can my order be changed or cancelled after purchase?",
-    'editDesc' => "If you wish to change or cancel your order, please contact our customer service team as soon as possible. We will do our best to assist you, but please note that we cannot guarantee changes or cancellations if the order has already been processed or shipped."
+    'editDesc' => "If you wish to change or cancel your order, please contact our customer service team as soon as possible. We will do our best to assist you, but please note that we cannot guarantee changes or cancellations if the order has already been processed or shipped.",
+    'requiredName' => 'The Name field cannot be empty',
+    'stringName' => 'The Name field cannot be numeric',
+    'stringMax' => 'The Name field cannot exceed 255 characters',
+    'nameRegex' => 'The Name field must contain at least one letter',
+    'nameMin' => 'The Name field must contain at least two characters',
+    'requiredEmail' => 'The Email field cannot be empty',
+    'stringEmail' => 'The Email field cannot be numeric',
+    'emailEmail' => 'The Email field must be a valid email address',
+    'emailMax' => 'The Email field cannot exceed 255 characters',
+    'requiredPassword' => 'The Password field cannot be empty',
+    'stringPassword' => 'The Password field cannot be numeric only'
 ];

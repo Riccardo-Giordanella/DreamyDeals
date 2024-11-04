@@ -72,5 +72,16 @@ return [
     'discount' => '6. Come posso applicare un codice sconto?',
     'discountDesc' => "Puoi applicare un codice sconto nella pagina del checkout. Inserisci il codice nell'apposito campo e clicca su 'Applica'. Lo sconto verrà automaticamente detratto dal totale del tuo ordine.",
     'edit' => "7. Il mio ordine può essere modificato o annullato dopo l'acquisto?",
-    'editDesc' => "Se desideri modificare o annullare il tuo ordine, contatta il nostro servizio clienti il prima possibile. Faremo del nostro meglio per assisterti, ma tieni presente che non possiamo garantire modifiche o annullamenti se l'ordine è già stato processato o spedito."
+    'editDesc' => "Se desideri modificare o annullare il tuo ordine, contatta il nostro servizio clienti il prima possibile. Faremo del nostro meglio per assisterti, ma tieni presente che non possiamo garantire modifiche o annullamenti se l'ordine è già stato processato o spedito.",
+    'requiredName' => 'Il campo Nome non può essere vuoto',
+    'stringName' => 'Il campo Nome non può essere numerico',
+    'stringMax' => 'Il campo Nome non può superare i 255 caratteri',
+    'nameRegex' => 'Il campo Nome deve contenere almeno una lettera',
+    'nameMin' => 'Il campo Nome deve contenere almeno 2 caratteri',
+    'requiredEmail' => 'Il campo Email non può essere vuoto',
+    'stringEmail' => 'Il campo Email non può essere numerico',
+    'emailEmail' => 'Il campo Email deve essere un indirizzo e-mail valido',
+    'emailMax' => 'Il campo Email non può superare i 255 caratteri',
+    'requiredPassword' => 'Il campo Password non può essere vuoto',
+    'stringPassword' => 'Il campo Password non può essere solo numerico'
 ];
