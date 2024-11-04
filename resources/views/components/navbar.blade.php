@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg backgrounddark shadow">
+<nav class="navbar navbar-expand-lg backgrounddark shadow sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{route('homepage')}}">
             <img src="{{asset('logo.png')}}" alt="Logo" width="70" height="70" class="d-inline-block align-text-top me-5 ms-3">
@@ -20,7 +20,8 @@
                     </a>
                     <ul class="dropdown-menu backgrounddark">
                         @foreach($categories as $category)
-                        <li class="backgrounddark text-center"><a class="textred text-center" href="{{route('byCategory', ['category' => $category])}}" class="dropdown-item text-capitalize">{{__("ui.$category->name")}}</a>
+                        <li class="backgrounddark text-center">
+                            <a class="textred text-center" href="{{route('byCategory', ['category' => $category])}}" class="dropdown-item text-capitalize">{{__("ui.$category->name")}}</a>
                         </li>
                         @if(!$loop->last)
                         <hr class="dropdown-divider">
@@ -33,7 +34,7 @@
                 <li class="nav-item">
                     <a href="{{route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25">
                         {{__("ui.revisor")}}
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                        <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger @if(!\App\Models\Article::toBeRevisedCount()) d-none @endif">
                             {{\App\Models\Article::toBeRevisedCount()}}
                         </span>
                     </a>
@@ -63,8 +64,11 @@
                         <li><a href="{{route('register')}}" class="dropdown-item textred">{{__("ui.register")}}</a></li>
                         <hr class="dropdown-divider">
                         <li class="d-flex justify-content-center">
-                            <a href="">
+                            <a href="{{route('facebook.redirect')}}" class="me-3">
                                 <i class="fa-brands fa-facebook fa-2x" style="color: #0008ff;"></i>
+                            </a>
+                            <a href="{{route('google.redirect')}}" class="ms-3">
+                                <i class="fa-brands fa-google-plus-g fa-2x" style="color: #EC4E1D;"></i>
                             </a>
                         </li>
                     </ul>
@@ -78,7 +82,7 @@
                 <button class="input-group-text btn btn-success me-5" type="submit" id="basic-addon2">{{__("ui.search")}}</button>
             </div>
         </form>
-        <div class="col-12 col-md-2">
+        <div class="col-12 col-md-1">
             <x-_locale lang="it" />
             <x-_locale lang="en" />
             <x-_locale lang="es" />

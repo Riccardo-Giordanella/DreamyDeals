@@ -73,6 +73,10 @@ i:hover{
     height: 100vh;
 }
 
+.width-custom-button{
+    width: 25%;
+}
+
 .bg-img{
     background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.60), transparent), url(/public/herohead.png);
     background-repeat: no-repeat;
@@ -98,4 +102,8 @@ footer .social-section {
     background-size: cover;
     height: 120px;
     width: 120px;
+}
+
+.card-text{
+    color: var(--lavender);
 }

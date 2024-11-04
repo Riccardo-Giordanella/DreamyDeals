@@ -1,9 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\RevisorController;
+use App\Http\Controllers\FacebookController;
 
 // Homepage
 Route::get('/', [PublicController::class, 'homepage'])->name('homepage');
@@ -43,3 +45,16 @@ Route::post('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('s
 
 // Rotta delle FAQ
 Route::get('/faq', [PublicController::class, 'faq'])->name('faq');
+
+// Rotte per il login di Facebook
+
+// Rotta che useremo quando si clicca su tasto facebook
+Route::get('/auth/facebook/redirect', [FacebookController::class, 'redirect'])->name('facebook.redirect');
+// Rotta che verrà usata da Facebook per riportarci sul nostro sito loggati
+Route::get('/auth/facebook/callback', [FacebookController::class, 'callback'])->name('facebook.callback');
+
+// Rotte di Google
+// Rotta del click sul tasto
+Route::get('/auth/google/redirect', [GoogleController::class, 'redirect'])->name('google.redirect');
+// Rotta che verrà utilizzata da Google per riportarci sul nostro sito loggati
+Route::get('/auth/google/callback', [GoogleController::class, 'callback'])->name('google.callback');

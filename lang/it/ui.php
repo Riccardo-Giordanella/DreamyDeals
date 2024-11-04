@@ -83,5 +83,6 @@ return [
     'emailEmail' => 'Il campo Email deve essere un indirizzo e-mail valido',
     'emailMax' => 'Il campo Email non può superare i 255 caratteri',
     'requiredPassword' => 'Il campo Password non può essere vuoto',
-    'stringPassword' => 'Il campo Password non può essere solo numerico'
+    'stringPassword' => 'Il campo Password non può essere solo numerico',
+    'minPassword' => 'Il campo Password deve contenere almeno 8 caratteri',
 ];

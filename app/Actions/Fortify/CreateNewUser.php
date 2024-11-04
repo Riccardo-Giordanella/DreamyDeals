@@ -41,6 +41,7 @@ class CreateNewUser implements CreatesNewUsers
             'email.max' => trans('ui.emailMax'),
             'password.required' => trans('ui.requiredPassword'),
             'password.string' => trans('ui.stringPassword'),
+            'password.min' => trans('ui.minPassword')
         ])->validate();
 
         return User::create([

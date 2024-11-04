@@ -2,11 +2,9 @@
     <div class="container-fluid pt-5">
         <div class="row justify-content-center">
             <div class="col-8">
-                <div class="rounded shadow bg-body-secondary">
-                    <h1 class="display-5 text-center pb-2">
-                        {{ __("ui.dashboard") }}
-                    </h1>
-                </div>
+                <h1 class="display-5 text-center pb-2">
+                    {{ __("ui.dashboard") }}
+                </h1>
             </div>
         </div>
         @if ($article_to_check)
@@ -79,8 +77,8 @@
                         </div>
                     </div>
                     @endforeach
-
-
+                    
+                    
                     @else
                     {{-- @for ($i = 0; $i < 6; $i++) --}}
                     <div class="col-6 col-md-4 mb-4 text-center">
@@ -121,11 +119,11 @@
         </div>
         @else
         <div class="row justify-content-center align-items-center height-custom text-center">
-            <div class="col-12">
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
                 <h1 class="fst-italic display-4">
                     {{ __("ui.noRevision") }}
                 </h1>
-                <a href="{{ route('homepage') }}" class="mt-5 btn btn-success">{{ __("ui.backToHome") }}</a>
+                <a href="{{ route('homepage') }}" class="mt-5 btn btn-success width-custom-button">{{ __("ui.backToHome") }}</a>
             </div>
         </div>
         @endif

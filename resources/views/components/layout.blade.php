@@ -12,7 +12,7 @@
     
     {{$slot}}
     
-    <x-footer/>
+    <x-footer/>   
     @vite('resources/js/app.js')
     <script src="https://kit.fontawesome.com/0a58d89964.js" crossorigin="anonymous"></script>
 </body>
