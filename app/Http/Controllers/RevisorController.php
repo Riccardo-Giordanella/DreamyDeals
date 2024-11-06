@@ -30,6 +30,12 @@ class RevisorController extends Controller
         return redirect()->back()->with('message', "Hai rifiutato l'articolo $article->title");
     }
 
+    public function toBeRevisited(Article $article)
+    {
+        $article->setAccepted(null);
+        return redirect()->back()->with('message', "Hai mandato l'articolo $article->title nuovamente in revisione");
+    }
+
     public function becomeRevisor()
     {
         Mail::to('admin@presto.it')->send(new BecomeRevisor(Auth::user()));

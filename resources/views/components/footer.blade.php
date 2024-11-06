@@ -56,9 +56,13 @@
                     <h6 class="text-uppercase fw-bold mb-4">
                         {{__("ui.link")}}
                     </h6>
+                    @auth
+                    @if (!Auth::user()->is_revisor)
                     <p>
                         <a href="{{route('become.revisor')}}" class="text-reset btn bg-dark">{{__("ui.become")}}</a>
                     </p>
+                    @endif
+                    @endauth
                     <p>
                         <a href="{{route('faq')}}" class="text-reset btn bg-dark">FAQ</a>
                     </p>

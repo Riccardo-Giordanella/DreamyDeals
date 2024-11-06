@@ -16,7 +16,7 @@
                     {{__("ui.notByCat")}}
                 </h3>
                 @auth
-                <a href="{{route('create.article')}}" class="btn btn-dark my-5">{{__("ui.publish")}}</a>
+                <a href="{{route('create.article')}}" class="btn btn-success my-5">{{__("ui.publish")}}</a>
                 @endauth
             </div>
             @endforelse

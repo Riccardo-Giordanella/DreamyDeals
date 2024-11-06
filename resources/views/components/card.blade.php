@@ -8,6 +8,15 @@
             @if ($article->category)
                 <a href="{{route('byCategory', ['category' => $article->category])}}" class="btn btn-outline-info">{{__("ui." . $article->category->name)}}</a>
             @endif
+            @auth
+            @if (Auth::user()->is_revisor)
+            <form action="{{ route('tobe.revisited', compact('article')) }}" method="POST">
+                @csrf
+                @method('PATCH')
+                <button class="btn btn-danger"><i class="fa-regular fa-eye" style="color: #ffffff;"></i></button>
+            </form>
+            @endif
+            @endauth
         </div>
     </div>
 </div>
