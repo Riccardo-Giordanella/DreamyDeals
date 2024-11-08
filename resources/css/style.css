@@ -31,7 +31,6 @@ a{
 }
 
 a:hover{
-    transform: scale(1.02);
     color: var(--lavender);
     text-shadow: 1px 1px 1px var(--lavender), -1px -1px 1px var(--lavender);
 }
@@ -106,4 +105,12 @@ footer .social-section {
 
 .card-text{
     color: var(--lavender);
+}
+
+@media screen and (max-width: 991px){
+    #notify{
+        width: 100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }

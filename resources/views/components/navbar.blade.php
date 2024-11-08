@@ -32,7 +32,7 @@
                 @auth
                 @if (Auth::user()->is_revisor)
                 <li class="nav-item">
-                    <a href="{{route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25">
+                    <a href="{{route('revisor.index')}}" id="notify" class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25">
                         {{__("ui.revisor")}}
                         <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-danger @if(!\App\Models\Article::toBeRevisedCount()) d-none @endif">
                             {{\App\Models\Article::toBeRevisedCount()}}
@@ -82,9 +82,7 @@
                 <button class="input-group-text btn btn-success me-5" type="submit" id="basic-addon2">{{__("ui.search")}}</button>
             </div>
         </form>
-        <div class="col-12 col-md-1">
-            <x-_locale lang="it" />
-            <x-_locale lang="en" />
-            <x-_locale lang="es" />
-        </div>
+        <x-_locale lang="it" />
+        <x-_locale lang="en" />
+        <x-_locale lang="es" />
     </nav>

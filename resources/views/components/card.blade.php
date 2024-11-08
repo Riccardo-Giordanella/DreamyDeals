@@ -3,10 +3,10 @@
     <div class="card-body backgrounddark">
         <h5 class="card-title card-text">{{$article->title}}</h5>
         <h6 class="card-subtitle card-text">{{$article->price}} €</h6>
-        <div class="d-flex justify-content-evenly align-items-center mt-5">
+        <div class="d-flex justify-content-evenly align-items-center mt-3 flex-column">
             <a href="{{route('article.show', compact('article'))}}" class="btn btn-primary">{{__("ui.detail")}}</a>
             @if ($article->category)
-                <a href="{{route('byCategory', ['category' => $article->category])}}" class="btn btn-outline-info">{{__("ui." . $article->category->name)}}</a>
+                <a href="{{route('byCategory', ['category' => $article->category])}}" class="btn btn-outline-info my-2">{{__("ui." . $article->category->name)}}</a>
             @endif
             @auth
             @if (Auth::user()->is_revisor)

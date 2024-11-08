@@ -16,12 +16,13 @@
         </div>
     </div>
     <main class="container-fluid text-center m-0">
-        <section class="row justify-content-center align-items-center">
+        <section class="row justify-content-center align-items-center mb-5">
             <div class="col-12 d-flex justify-content-center flex-column height-custom-full bg-img">
                 <h1>DreamyDeals</h1>
             </div>
         </section>
         <section class="row height-custom justify-content-center align-items-center py-5 backgroundgeneral">
+                <h2 class="display-3 mb-5">Gli ultimi articoli inseriti</h2>
             @forelse($articles as $article)
             <div class="col-12 col-md-3">
                 <x-card :article="$article" />
