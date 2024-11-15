@@ -84,4 +84,5 @@ return [
     'requiredPassword' => 'El campo Password no puede estar vacío',
     'stringPassword' => 'El campo Password no puede ser solo numérico',
     'minPassword' => 'El campo Password debe contener al menos 8 caracteres',
+    'lastArticles' => 'Los últimos artículos insertados'
 ];

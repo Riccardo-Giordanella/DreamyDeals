@@ -84,4 +84,5 @@ return [
     'requiredPassword' => 'The Password field cannot be empty',
     'stringPassword' => 'The Password field cannot be numeric only',
     'minPassword' => 'The Password field must contain at least 8 characters',
+    'lastArticles' => 'The latest articles added'
 ];

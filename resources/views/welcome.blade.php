@@ -22,7 +22,7 @@
             </div>
         </section>
         <section class="row height-custom justify-content-center align-items-center py-5 backgroundgeneral">
-                <h2 class="display-3 mb-5">Gli ultimi articoli inseriti</h2>
+                <h2 class="display-3 mb-5">{{__("ui.lastArticles")}}</h2>
             @forelse($articles as $article)
             <div class="col-12 col-md-3">
                 <x-card :article="$article" />
